@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   getNotes = (data) => {
-    axios.get('https://note-app-mike-torres4066.herokuapp.com/notes')
+    axios.get('https://firehose-note-api.herokuapp.com/notes')
     .then((res) => console.log(res.data) )
     .catch((err) => console.log(err.response.data) );
   }
