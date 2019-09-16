@@ -21,7 +21,7 @@ class App extends Component {
 
   getNotes = () => {
     axios.get('https://note-app-mike-torres4066.herokuapp.com')
-    .then((res) => console.log(res.datea) )
+    .then((res) => console.log(res.data) )
     .catch((err) => console.log(err.response.data) );
   }
 
